@@ -8,7 +8,7 @@ ui <- fluidPage(
     sidebarLayout(
         sidebarPanel(
             sliderInput("width", "Width", 28, 80, 40, post = " inches"),
-            radioButtons("alloy", "Alloy Category: 0 = Low C || 1 = High C",
+            radioButtons("alloy", "Alloy Category: 0 = Low C | 1 = High C",
                          choices = c(0, 1), selected = 0),
             sliderInput("top", "Top X Suppliers",1,15,5, pre = "x = "),
             sliderInput("coil_ratio", "Exclusion", 0, 0.5, 0.1, 0.05)
